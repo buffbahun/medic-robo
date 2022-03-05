@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="darta.css">
+    <script src="darta1.js" defer></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="hmbtn"><object data="Hamburger_icon.svg" type=""></object></div>
+        <div class="logo"><h1>logo</h1></div>
+      <div class="nav">
+        <div class="dashb">Dashboard</div>
+        <div class="darta">Darta</div>
+        <div class="date">Date</div>
+        <div class="setng">Settings</div>
+      </div>
+      <div class="prof">
+          <object data="21440194611594721608.svg" type="" width="38px"></object>
+      </div>
+   </nav>
+   <main>
+       <div class="form">
+           <div class="head">
+               <h1>दर्ता</h1>
+               <button>नयाँ दर्ता</button>
+           </div>
+           <form action="/darta" method="post">
+                <input type="text" placeholder="Patient name" name="patientName">
+                <input type="text" placeholder="Bed no." name="bedNo">
+                <input type="text" placeholder="Medicine" name="medicine">
+                <input type="text" placeholder="Time" name="time">
+                <button class="add">Add medicines <img src="./plus.svg" alt=""></button>
+                <button type="submit" class="reg">Register</button>
+           </form>
+       </div>
+       
+   </main>
+</body>
+</html>

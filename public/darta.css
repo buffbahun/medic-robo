@@ -1,0 +1,122 @@
+main .form .head {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+main .form .head h1 {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+}
+main .form button {
+  background-color: seagreen;
+  color: white;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 8px;
+  letter-spacing: 3px;
+  /* height: 40px; */
+  width: fit-content;
+  font-size: 1.2rem;
+  justify-self: right;
+}
+main .form form {
+  margin: 15px 0;
+  padding: 30px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  column-gap: 3vw;
+  row-gap: 3vh;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: inset 1px 0 10px #cccccc;
+  display: none;
+  /* background-color: seagreen; */
+}
+main .form form.sh {
+  display: grid;
+}
+main .form form input {
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  outline: none;
+  border: solid 1px grey;
+}
+#files {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+main .form form label[for="files"] {
+  padding: 5px;
+  border: solid 1px grey;
+  border-radius: 5px;
+  background-color: seagreen;
+  color: white;
+  width: fit-content;
+  font-size: 1.2rem;
+  justify-self: center;
+  letter-spacing: 2px;
+}
+
+main .form form .add {
+  background-color: seagreen;
+}
+
+.add > * {
+  vertical-align: middle;
+}
+
+main .form form button {
+  background-color: #ec2c00;
+}
+.table {
+  margin-top: 20px;
+}
+.table .filt {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.table .filt input {
+  padding: 8px;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  border-radius: 15px;
+  outline: none;
+  border: solid 1px grey;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  /* border: solid 2px rgb(190,190,190); */
+  text-align: left;
+  letter-spacing: 1px;
+  padding: 15px 20px;
+}
+tr:nth-child(odd) {
+  background-color: rgb(245, 245, 245);
+}
+th {
+  background-color: rgb(235, 235, 235);
+}
+
+td img {
+  display: none;
+}
+
+tbody tr:hover > td > img {
+  display: block;
+}
+tfoot td {
+  text-align: right;
+}
