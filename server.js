@@ -4,7 +4,7 @@ const app = express();
 const MongoClient = require("mongodb").MongoClient;
 
 MongoClient.connect(
-  "mongodb+srv://admin:VH4$Ws5Wm3yri!R@cluster0.1xor6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "mongodb+srv://admin:...",
   { useUnifiedTopology: true }
 )
   .then((client) => {
